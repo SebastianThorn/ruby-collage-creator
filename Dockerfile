@@ -17,6 +17,10 @@ RUN bundle install -j4 --quiet
 COPY generate_site.rb photobatch.rb index_*.erb ./
 
 
+VOLUME in
+VOLUME out
+
+
 CMD ["ruby", "generate_site.rb"]
 
 # Send "ctrl-c"-like signal when stopping
