@@ -157,7 +157,10 @@ class PhotoBatch
       heading: @config[:html_heading]
     )
 
-    pp Dir.entries(".")
+    pp Dir.entries(".") 
+    unless File.directory?(save_location)
+      FileUtils.mkdir_p(save_location)
+    end
     File.write(save_location + "index.html", html)
 
 
