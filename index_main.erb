@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title><%= title %></title>
+    <meta charset="utf-8"/>
+
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- spotlight.js -->
+    <script src="https://rawcdn.githack.com/nextapps-de/spotlight/0.6.3/dist/spotlight.cdn.js"></script>
+
+  <body>
+  <div class="container">
+    <h1><%= heading %></h1>
+
+
+    <div class="row spotlight-group" data-control="page" data-progress="true">
+
+
+    <!-- Each image -->
+    <% folders.each do |folder| %>
+
+      <div class="col s12 m4 l3">
+        <a href="<%= folder %>">
+        <%= folder %>
+        </a>
+      </div>
+
+    <% end %>
+    </div>
+    </div>
+  </body>
+</html>
