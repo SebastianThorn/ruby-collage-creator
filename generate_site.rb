@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 require "./photobatch.rb"
-require "ripl"
+require "pry"
 
 #
 # Start new generation of images
