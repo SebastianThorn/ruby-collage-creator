@@ -14,5 +14,5 @@ FileUtils.rm(Dir.glob("out/*").select {|f| File.file?(f)})
 puts
 pb = PhotoBatch.new("in")
 pb.newAlbum("urbanegoat_2020-04-19", "Urbane Goat, 2020-04-19")
-pb.newAlbum("photos", "Blandade Foton")
+#pb.newAlbum("photos", "Blandade Foton")
 pb.wrapper()
