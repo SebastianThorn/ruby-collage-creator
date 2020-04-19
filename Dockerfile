@@ -14,7 +14,8 @@ COPY Gemfile Gemfile.lock ./
 RUN bundle install -j4 --quiet
 
 # Copy source-files
-COPY generate_site.rb ./
+COPY generate_site.rb photobatch.rb ./
+
 
 CMD ["ruby", "generate_site.rb"]
 
