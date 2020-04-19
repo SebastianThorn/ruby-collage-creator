@@ -157,7 +157,7 @@ class PhotoBatch
       heading: @config[:html_heading]
     )
 
-    binding.pry
+    pp Dir.enrties(".")
     File.write(save_location + "index.html", html)
 
 
