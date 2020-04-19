@@ -17,8 +17,8 @@ RUN bundle install -j4 --quiet
 COPY generate_site.rb photobatch.rb index_*.erb ./
 
 
-VOLUME in
-VOLUME out
+VOLUME /usr/src/app/in
+VOLUME /usr/src/app/out
 
 
 CMD ["ruby", "generate_site.rb"]
