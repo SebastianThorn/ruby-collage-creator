@@ -18,7 +18,7 @@ COPY generate_site.rb photobatch.rb index_*.erb ./
 
 
 VOLUME /usr/src/app/in
-VOLUME /usr/src/app/out
+#VOLUME /usr/src/app/out
 
 
 CMD ["ruby", "generate_site.rb"]
