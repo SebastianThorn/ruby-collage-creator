@@ -157,6 +157,7 @@ class PhotoBatch
       heading: @config[:html_heading]
     )
 
+    Ripl.start :binding => binding
     File.write(save_location + "index.html", html)
 
 
