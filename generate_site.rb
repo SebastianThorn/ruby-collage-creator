@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # -*- coding: utf-8 -*-
 
-require "./class/photobatch.rb"
+require "./photobatch.rb"
 
 #
 # Start new generation of images
